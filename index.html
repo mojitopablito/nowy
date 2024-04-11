@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Mnożenia</title>
+    <title>Prosty Kalkulator</title>
 </head>
 <body>
-    <h1>Prosty Kalkulator Mnożenia</h1>
+    <h1>Prosty Kalkulator</h1>
     <form id="calculatorForm">
-        <input type="text" id="inputVariable" placeholder="Wprowadź liczbę">
-        <button type="button" onclick="multiplyByTwo()">Mnóż przez 2</button>
-    </form>
-    <div id="multiplicationResult"></div>
+        <label for="kwiiatki">Liczba 1:</label>
+        <input type="text" id="kwiiatki" name="number1"><br>
 
-    <script src="script.js"></script>
+        <label for="gowno">Liczba 2:</label>
+        <input type="text" id="gowno" name="number2"><br>
+
+        <button type="button" onclick="calculate()">Oblicz</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="julka.js"></script>
 </body>
 </html>
