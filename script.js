@@ -1,6 +1,9 @@
-// Skrypt do mnożenia przez 2
-function multiplyByTwo() {
-    const inputValue = parseFloat(document.getElementById('inputVariable').value);
-    const result = inputValue * 2;
-    document.getElementById('multiplicationResult').innerText = `Wynik mnożenia przez 2: ${result}`;
+
+function calculate() {
+    const number1 = parseInt(document.getElementById('kwiiatki').value);
+    const number2 = parseInt(document.getElementById('gowno').value);
+
+    const wynik = number1 + number2;
+
+    document.getElementById('result').innerText = "Wynik: "+wynik;
 }
